@@ -1,3 +1,6 @@
-function mostrarMensaje() {
-    document.getElementById("mensaje").innerText = "¡Has hecho clic en el botón!";
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const nameElement = document.querySelector('.highlight');
+    nameElement.addEventListener('click', () => {
+        alert('¡Hola, Paulo Calleja! Bienvenido a tu página web.');
+    });
+});
